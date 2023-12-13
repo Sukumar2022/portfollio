@@ -1,0 +1,917 @@
+@font-face {
+    font-family: fira;
+    src: url(../fonts/FiraCode-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: gluten;
+    src: url(../fonts/Gluten-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family:sed;
+    src: url(../fonts/SedgwickAveDisplay-Regular.ttf);
+}
+@font-face {
+    font-family:alumni;
+    src: url(../fonts/AlumniSansCollegiateOne-Regular.ttf);
+}
+@font-face {
+    font-family:anton;
+    src: url(../fonts/Anton-Regular.ttf);
+}
+@font-face {
+    font-family:playpen;
+    src: url(../fonts/PlaypenSans-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.main {
+    width: 100%;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #181823;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loader p{
+    font-family: fira;
+    font-size: 65px;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+}
+
+
+.hero {
+    min-height: 110vh;
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-left {
+    height: 100vh;
+    width: 30%;
+}
+.hero-left h2 {
+    margin: 30px 40px;
+    color: #fff;
+    font-size: 33px;
+    font-family: gluten;
+}
+.hero-right {
+    height: 100vh;
+    width: 70%;
+    background-color: #181823;
+    
+}
+.navbar {
+    height: 12vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0px 4vw;
+  
+}
+
+li {
+    height: 100%;
+    padding: 20px;
+
+}
+
+.navbar a {
+    font-family: playpen;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    margin: 0px 10px;
+    color: #fff;
+    transition: .3s;
+    letter-spacing: 3px;
+}
+
+.navbar a:hover {
+    color: cyan;
+}
+
+.navbar .active {
+    background-color: #5221E6;
+    color: #fff;
+    font-weight: bold;
+    transition: .3s;
+}
+.navbar .active:hover {
+    background-color: #fff;
+    color: #000;
+}
+.res-nav-btn {
+    display: none;
+    position: absolute;
+    top: 1%;
+    right: 6%;
+    font-size: 47px;
+    color: #fff;
+}
+
+/* responsive navbar design  */
+.res-navbar {
+    z-index: 99;
+    position: fixed;
+    height: 100vh;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: #181823;
+    /* background-color: #000000;
+    background-image: linear-gradient(225deg, #000000 0%, #784BA0 50%, #000000 100%); */
+    overflow-x: hidden;
+    transition: 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 22px 3px #000;
+}
+
+.res-navbar ul {
+    margin: 60px 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.res-navbar li {
+    /* background-color: #74EBD5; */
+    /* background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    padding: 30px 150px; */
+    margin: 10px 0px;
+    border-radius: 50px;
+    text-align: center;
+    transition: .2s ease-in;
+}
+.res-navbar li:hover{
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+.res-navbar a {
+    font-family: playpen;
+    text-decoration: none;
+    font-size: 26px;
+    color: #FFF;
+    letter-spacing: 3px;
+}
+
+.res-navbar .active {
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    color: #000;
+    font-weight: bold;
+}
+
+.res-navbar p {
+    color: #fff;
+    font-size: 66px;
+    position: absolute;
+    top: 1%;
+    right: 6%;
+}
+
+/* end of navbar design  */
+.hero img {
+    position: absolute;
+    top: 14%;
+    left: 0%;
+    height: 485px;
+    width: 495px;
+    border-radius: 300px;
+}
+
+.hero .details {
+    position: absolute;
+    top: 28%;
+    right: 2%;
+    height: auto;
+    width: 780px;
+}
+
+.details h1 {
+    margin: -18px 30px;
+    font-family: sed;
+    font-size: 78px;
+    letter-spacing: 5px;
+    color: #fff;
+    line-height: 80px;
+}
+
+.details span {
+    color: #8C8C91;
+}
+
+.details p {
+    margin: 20px 30px;
+    font-size: 17px;
+    padding: 5px 0px;
+    color: #fff;
+    font-family: playpen;
+}
+
+/* end of hero section design  */
+.page2 {
+    height: auto;
+    min-height: 90vh;
+    width: 100%;
+    background-color: #FFF3E4;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.page2 .left {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.page2 .left h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin: 10px 30px;
+    font-family: anton;
+}
+
+.page2 .left p {
+    margin: 10px 30px;
+    font-family: playpen;
+    line-height: 25px;
+    width: 580px;
+    font-size: 18px;
+    color: #8C8C91;
+}
+
+.page2 .left a {
+    font-family: playpen;
+    position: relative;
+    text-decoration: none;
+    margin: 10px 30px;  
+    padding: 13px 10px;
+    font-size: 18px;
+    color: #78787a;
+    transition: .3s;
+    /* background-color: red; */
+}
+
+.page2 .left a::before {
+    position: absolute;
+    margin: 10px 0px;
+    top: 28px;
+    width: 100px;
+    content: '';
+    padding: 1px;
+    background-color: #4353FF;
+}
+
+.page2 .left a:hover {
+    background-color: #4353FF;
+    padding: 13px 21px;
+    color: #fff;
+}
+
+.page2 .right {
+    height: 100vh;
+    width: 50%;
+    background-image: url(../images/img2.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+/* end of page2(about us) design  */
+
+.page3 {
+    width: 100%;
+    background-color: #000;
+}
+
+.page3 .up {
+    position: relative;
+    height: 35vh;
+}
+
+.page3 .up p {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8C8C91;
+    letter-spacing: 2px;
+    font-family: playpen;
+}
+
+.page3 .up h1 {
+    font-family: anton;
+    position: absolute;
+    letter-spacing: 4px;
+    font-size: 53px;
+    line-height: 56px;
+    top: 26%;
+    left: 3.8%;
+    margin: 20px 40px;
+    color: #fff;
+}
+
+.page3 .down {
+    min-height: 65vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.page3 .down .card {
+    margin: 0px 10px;
+    height: 390px;
+    width: 360px;
+}
+
+.page3 .down .card h1 {
+    font-family: gluten;
+    font-size: 130px;
+    padding: 5px;
+    color: #8C8C91;
+}
+
+.page3 .down .card h4 {
+    font-family: playpen;
+    font-size: 22px;
+    padding: 2px 6px;
+    color: #fff;
+}
+
+.page3 .down .card h4 span {
+    color: #4353FF;
+}
+
+.page3 .down .card p {
+    font-family: playpen;
+    font-size: 16px;
+    padding: 8px 6px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* end of page3 design  */
+.page4 {
+    height: auto;
+    min-height: 110vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page4 .left {
+    height: 100vh;
+    width: 30%;
+}
+
+.page4 .left h1 {
+    margin: 5vw 4vw;
+    color: #fff;
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-family: sed;
+}
+
+.page4 .left p {
+    margin: 0 4vw;
+    color: #848c86;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 300px;
+    font-family: playpen;
+}
+
+.page4 .right {
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.page4 .right .card {
+    margin: 20px 30px;
+    width: 360px;
+    height: 290px;
+}
+
+.page4 .right .card i {
+    color: blueviolet;
+    font-size: 44px;
+}
+
+.page4 .right .card h4 {
+    margin: 30px 10px;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: sed;
+    letter-spacing: 4px;
+}
+
+.page4 .right .card p {
+    margin: 30px 10px;
+    font-size: 18px;
+    color: #848c86;
+    font-family: playpen;
+}
+
+/* end of page 4 design  */
+.page5 {
+    min-height: 210vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: fantasy;
+}
+
+.page5 .left {
+    width: 50%;
+}
+
+.page5 .left .details {
+    margin: 20px 30px;
+}
+
+.page5 .left .details p {
+    font-size: 18px;
+    color: #848c86;
+    letter-spacing: 2px;
+}
+
+.page5 .left .details h1 {
+    font-size: 55px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.page5 .pro-card {
+    position: relative;
+    margin: 20px 60px;
+    height: 620px;
+    width: 590px;
+    background-color: #181823;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page5 .pro-card img {
+    height: 380px;
+    width: 92%;
+}
+
+.page5 .pro-card h4 {
+    margin: 20px 30px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: sed;
+}
+
+.page5 .pro-card p {
+    margin: 10px 30px;
+    color: #848c86;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: playpen;
+}
+
+.page5 .pro-card button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: -65px;
+    padding: 20px 24px;
+    background-color: #4353FF;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.page5 .pro-card:hover{
+    transform: scale(.9);
+    cursor: pointer;
+}
+
+.page5 .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.page5 .right .r-btn {
+    padding: 18px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #4353FF;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: .3s;
+    font-family: playpen;
+}
+
+.page5 .right .r-btn:hover {
+    background-color: #4353FF;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.page6 {
+    height: auto;
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000;
+}
+
+.page6 .left {
+    height: 80%;
+    width: 40%;
+    margin: 0px 4vw;
+}
+
+.page6 .left h1 {
+    font-size: 58px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: sed;
+}
+
+.page6 .left p {
+    margin: 4vw 0px;
+    font-size: 18px;
+    color: #848c91;
+    line-height: 33px;
+    font-family: playpen;
+}
+
+.page6 .form {
+    height: 90%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page6 .form label {
+    margin: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    font-family: playpen;
+}
+
+.page6 .form input {
+    height: 42px;
+    width: 500px;
+    background-color: #181823;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    outline: none;
+    font-size: 18px;
+    font-family: playpen;
+}
+
+.page6 .form textarea {
+    padding: 10px;
+    height: 90px;
+    width: 500px;
+    background-color: #181823;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 18px;
+    font-family: playpen;
+}
+
+.page6 .form button {
+    height: 60px;
+    width: 500px;
+    background-color: #4353FF;
+    margin-top: 20px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: playpen;
+}
+
+.footer {
+    height: auto;
+    min-height: 70vh;
+    width: 100%;
+    background-color: #181823;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.footer .left h3 {
+    font-size: 55px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: gluten;
+    cursor: pointer;
+}
+
+.footer .left p {
+    line-height: 30px;
+    margin: 40px 0px;
+    font-size: 15px;
+    color: #848c91;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-family: playpen;
+}
+
+.footer .left span {
+    color: cyan;
+}
+.footer .left label{
+    margin: 10px 0px;
+    display: flex;
+}
+.footer .left label a{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.footer .right ul {
+    list-style: none;
+}
+
+.footer .right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: playpen;
+    transition: .3s;
+}
+.footer .right a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.bgcolor{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.nav{
+    position: fixed;
+    top: 10px;
+    height: 10vh;
+    width: 60%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181823;
+    border-radius: 40px;
+    z-index: 3;
+    transition: .3s;
+}
+.nav-left h3{
+    cursor: pointer;
+    margin: 0px 30px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0px 4vw;
+}
+
+.nav li {
+    height: 100%;
+    padding: 20px;
+}
+
+.nav a {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    margin: 0px 10px;
+    color: #fff;
+    transition: .3s;
+    letter-spacing: 3px;
+}
+.nav a:hover {
+    color: cyan;
+}
+.card-container{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.nav-icon{
+    color: #fff;
+    position: fixed;
+    display: none;
+    top: 22px;
+    right: 20px;
+    padding: 8px 14px;
+    font-size: 32px;
+    border-radius: 50px;
+    transition: .3s;
+    background-color: #181823;
+    z-index: 99;
+}
+
+.prj-card{
+    height: 290px;
+    width: 400px;
+    margin: 20px 14px;
+    background-color: #181823;
+    transition: .3s;
+}
+.prj-card:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+}
+.prj-card img{
+    height: 180px;
+    width: 100%;
+}
+.prj-card h1{
+    margin: 10px 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.prj-card .r-btn {
+    margin: 10px 10px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #4353FF;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.prj-card .r-btn:hover {
+    background-color: #4353FF;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.loader2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader2 .box{
+    height: 100vh;
+    width: 288px;
+    background-color: #2a2a32;
+}
+.box:nth-child(odd){
+    background-color: #181823; 
+}
+
+.wrapper{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrapper .card{
+    border-radius: 4px;
+    font-family: playpen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 0px 28px;
+    height: 390px;
+    width: 350px;
+    transition: .4s;
+}
+.wrapper .card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+}
+.wrapper .card img{
+    height: 190px;
+    width: 100%;
+}   
+.wrapper .card h2{
+    font-family: sed;
+    letter-spacing: 2px;
+}
+.wrapper .card p{
+    width: 80%;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.wrapper .card button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 20px 0px;
+    height: 40px;
+    width: 200px;
+    color: blueviolet;
+    letter-spacing: 2px;
+    border: none;
+    font-weight: 600;
+    background-color: rgba(82, 244, 244, 0.371);
+    cursor: pointer;
+}
+

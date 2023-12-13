@@ -1,0 +1,658 @@
+@media (max-width:1048px) {
+   .navbar a{
+    font-size: 16px;
+   }
+   .navbar .active{
+    font-size: 12px;
+    text-align: center;
+   }
+   .hero img{
+    height: 560px;
+    width: 590px;
+    }
+    .hero .details{
+        top: 20%;
+        right: 1%;
+        width: 800px;
+    }
+    .hero .details h1{
+        margin: 0px 190px;
+        font-size: 50px;
+    }
+    .details p{
+        margin: 5px 200px;
+        width: 600px;
+    }
+    .page4 .right{
+        height: auto;
+    }
+    .page4 .right .card{
+        height: auto;
+    }
+    .page5 .pro-card{
+        width: 460px;
+    }
+    .page6 .form label{
+        font-size: 18px;  
+    }
+    .page6 .form input{
+        height: 50px;
+        width: 412px;
+    }
+    .page6 .form textarea{
+        height: 110px;
+        width: 412px;
+    }
+    .page6 .form button{
+        width: 410px;
+    }
+}
+@media (max-width:952px) {
+    .res-nav-btn{
+        display: block;
+    }
+    .res-navbar{
+        display: block;
+    }
+    .hero .details{
+        right: 10px;
+    }
+    .hero .details h1{
+        margin: 0px 400px;
+        width: 300px;
+        font-size: 40px;
+    }
+    .details p{
+        margin: 5px 330px;
+        width: 460px;
+    }
+    .hero-left h2{
+        margin: 30px 20px;
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
+    .navbar ul{
+        display: none;
+    }
+ 
+    .hero .details {
+        position: absolute;
+        top: 28%;
+        right: 2%;
+        height: auto;
+        width: 780px;
+       
+    }
+    .page2 .left p{
+        width: 440px;
+    }
+    .page5 .pro-card{
+        height: 563px;
+        width: 430px;
+    }
+    .page5 .pro-card img {
+        height: 290px;
+        width: 100%;
+    }
+}
+@media (max-width:952px){
+    .page6 .form input{
+        height: 50px;
+        width: 390px;
+    }
+    .page6 .form textarea{
+        height: 110px;
+        width: 390px;
+    }
+    .page6 .form button{
+        width: 390px;
+    }
+}
+@media (max-width:823px){
+    .page5 .left .pro-card {
+        height: 550px;
+        width: 370px;
+    }
+}
+
+@media (max-width:821px){
+    body{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+/* 
+
+@media (max-width:800px){
+    
+    .details p {
+        margin: 35px 270px;
+        width: 500px;
+        font-size: 18px;
+    }
+    .hero .details h1 {
+        margin: -38px 466px;
+        width: 303px;
+        font-size: 44px;
+    }
+    .page2 .left{
+        width: 100%;
+        height: 60vh;
+        padding: 30px;
+    }
+    .page2 .left p{
+        width: 90%;
+    }
+    .page2 .left a{
+        font-size: 22px;
+    }
+    .page2 .left a::before {
+        margin: 20px 0px;
+    }
+    .page2 .right{
+        height: 60vh;
+        width: 100%;
+    }
+    .page4 .left{
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+   .page4 .left p{
+        width: 90%;
+        font-size: 19px;
+        font-weight: 300;
+    }
+    .page4 .right{
+        height: auto;
+        width: 100%;
+    }
+    .page4 .right .card {
+        width: 550px;
+        height: 330px;
+    }
+    .page4 .right .card i {
+        margin: 20px 50px;
+        font-size: 55px;
+    }
+    .page4 .right .card h4 {
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+    .page4 .right .card p{
+        font-size: 20px;
+    }
+    .page5 .left {
+        height: auto;
+        width: 100%;
+    }
+    .page5 .left .pro-card {
+        height: 640px;
+        width: 678px;
+    }
+    .page5 .right .pro-card {
+        height: 640px;
+        width: 678px;
+    }
+    .page5 .pro-card img {
+        height: 410px;
+        width: 100%;
+    }
+    .page5 .right {
+        width: 100%;
+    }
+    .page5 .right .r-btn{
+        margin-bottom: 20px;
+    }
+    .page6{
+        min-height: 102px;
+        padding: 20px;
+    }
+    .page6 .left {
+        height: 24vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .page6 .left h1 {
+        font-size: 22px;    
+    }
+    .page6 .form {
+        height: 56vh;
+        width: 100%;
+    }
+    .page6 .form label {
+        font-size: 19px;
+        padding: 5px;
+    }
+    .page6 .form input{
+        height: 60px;
+        width: 680px;
+    }
+    .page6 .form textarea{
+        height: 110px;
+        width: 680px;
+    }
+    .page6 .form button{
+        width: 320px;
+    }
+    .footer .left h3 {
+        font-size: 48px;
+    }
+} */
+/* @media (max-width:726px) {
+    
+    .hero img {
+        height: 560px;
+        width: 580px;
+        top: 8%;
+        left: 8%;
+    }
+    .hero .details {
+        background-color: tan;
+        height: 100vh;
+        position: absolute;
+        top: 60%;
+        background: none;
+    }
+    .hero .details h1 {
+        margin: 8px 135px;
+        width: 100%;
+        font-size: 62px;
+        letter-spacing: 3px;
+    }
+    .details p {
+        margin: 24px 135px;
+        width: 70%;
+        font-size: 20px;
+    }
+    .page5 .left .pro-card {
+        height: 640px;
+        width: 600px;
+    }
+}
+
+@media (max-width:718px) {
+    .res-navbar{
+        overflow-x: hidden;
+    }
+    .hero-left {
+        width: 100%;
+        height: 100vh;
+    }
+    .hero-left h2 {
+        font-size: 18px;
+    }
+    .hero-right {
+        height: 80vh;
+        width: 100%;
+    }
+    .hero img {
+        height: 560px;
+        width: 580px;
+        top: 8%;
+        left: 8%;
+    }
+    .hero .details {
+        height: 100vh;
+        position: absolute;
+        top: 60%;
+        background: none;
+    }
+    .hero .details h1 {
+        margin: 8px 135px;
+        width: 100%;
+        font-size: 62px;
+        letter-spacing: 3px;
+    }
+    .details p {
+        margin: 24px 135px;
+        width: 70%;
+        font-size: 20px;
+    }
+    .page3{
+        height: auto;
+        width: 100%;
+    }
+    .page3 .down{
+        margin: 15px 0px;
+        height: auto;
+        width: 100%;
+        background-color: red;
+    }
+    .page3 .down .card{
+        width: 100%;
+        height: 100%;
+        margin: 20px 30px;
+        background-color: cyan;
+    }
+
+    .page3 .down .card h1 {
+        font-size: 140px;
+    }
+    .page3 .down .card h4 {
+        font-size: 35px;
+    }
+    .page3 .down .card p {
+        font-size: 21px;
+        width: 95%;
+        margin: 5px;
+    }
+    .page5 .left .pro-card{
+        height: 300px;
+        width: 400px;
+    }
+
+    .page5 .pro-card {
+        height: 300px;
+        width: 400px;
+        background-color: gray;
+    }
+    page5 .pro-card img {
+        height: 379px;
+        width: 300px;
+    }
+    .page6 .form input {
+        height: 65px;
+        width: 640px;
+    }
+    .page6 .form textarea{
+        height: 130px;
+        width: 640px;
+    }
+
+}
+
+
+@media (max-width:428px){
+    .res-navbar ul {
+        margin: 70px -30px;
+    }
+    .res-navbar li {
+        padding: 30px 120px;
+        margin: 10px 0px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    .res-navbar a {
+        font-size: 19px;
+        letter-spacing: 4px;
+    }
+    .res-navbar .active {
+        margin: 80px 0px;
+        padding: 30px 110px;
+    }
+    .res-navbar p {
+        right: 6.4%;
+    }
+    .hero-left h2 {
+        font-size: 25px;
+        letter-spacing: 4px;
+    }
+    .res-nav-btn{
+        font-size: 40px;
+    }
+    .hero-left {
+        width: 100%;
+        height: 65vh;
+    }
+    .hero img {
+        height: 430px;
+        width: 370px;
+        top: 8%;
+        left: 5%;
+    }
+    .hero .details h1 {
+        margin: -150px 420px;
+        width: 100%;
+        font-size: 44px;
+        letter-spacing: 3px;
+    }
+    .details p {
+        text-align: justify;
+        margin: 145px 420px;
+        width: 40%;
+        font-size: 20px;
+    }
+
+    .page3 .down .card {
+        margin: 50px 0px;
+        height: 402px;
+        width: 370px;
+    }
+    .page2 .left h1 {
+        font-size: 47px;
+    }
+    .page3 .down .card h1 {
+        font-size: 110px;
+    }
+    .page3 .down .card h4 {
+        font-size: 28px;
+    }
+    .page3 .down .card p {
+        font-size: 19px;
+        width: 95%;
+    }
+    .page4 .left p{
+        width: 90%;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .page5 .left{
+        height: auto;
+    }
+    .page5 .left .details h1 {
+        font-size: 52px;
+    }
+    .page5 .pro-card {
+        margin: 20px 30px;
+        height: 700px;
+        width: 360px;
+    }
+    page5 .pro-card img {
+        height: 260px;
+    }
+
+    .page6 .left h1 {
+        font-size: 50px;
+        color: #fff;
+        letter-spacing: 3px;
+    }
+    .page6 .left p {
+        font-size: 16px;
+    }
+    .page6 .form {
+        height: 56vh;
+        width: 100%;
+    }
+    .page6 .form label {
+        font-size: 14px;
+    }
+
+    .page6 .form input {
+        height: 50px;
+        width: 385px;
+    }
+    .page6 .form textarea{
+        height: 130px;
+        width: 385px;
+    }
+    .page6 .form button {
+        height: 60px;
+        width: 300px;
+        margin-bottom: 20px;
+        
+    }
+    .footer .left h3 {
+        font-size: 34px;
+        text-align: center;
+    }
+    .footer .left p {
+        font-size: 17px;
+    }
+    .footer .right a {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+
+
+ */
+
+
+    /* project page  */
+    .nav{
+        display: none;
+    }
+    .box{
+        height: 100%;
+        width: 85px;
+        background-color: #2a2a32;
+    }
+    .wrapper .card{
+        margin: 20px 0px;
+    }
+}
+
+
+@media (max-width:414px){
+    .res-navbar ul {
+        margin: 70px -30px;
+    }
+    .res-navbar li {
+        padding: 30px 110px;
+        margin: 10px 0px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    .res-navbar a {
+        font-size: 21px;
+        letter-spacing: 4px;
+    }
+    .res-navbar .active {
+        margin: 80px 0px;
+        padding: 30px 60px;
+    }
+  
+    .hero img {
+        height: 385px;
+        width: 370px;
+        top: 8%;
+        left: 5%;
+    }
+    .page2 .left h1 {
+        font-size: 40px;
+    }
+    .page2 .right{
+        height: 100vh;
+        background-color: #181823;
+        margin: 20px 0px;
+    }
+    .page3 .up {
+        height: 50vh;
+    }
+    .page3 .down {
+        height: auto;
+        
+    }
+    .page3 .down .card {
+        margin: 10px 0px;
+        height: auto;
+       
+    }
+    
+    .page3 .down .card h1 {
+        font-size: 110px;
+    }
+    .page3 .down .card h4 {
+        font-size: 28px;
+    }
+    .page3 .down .card p {
+        font-size: 19px;
+        width: 95%;
+    }
+    .page4 .left p{
+        width: 90%;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .page5 .left{
+        height: auto;
+    }
+   
+    .page5 .left .details h1 {
+        font-size: 52px;
+    }
+    .page5 .pro-card {
+        margin: 20px 30px;
+        height: 700px;
+        width: 360px;
+    }
+    page5 .pro-card img {
+        height: 290px;
+    }
+
+    .page6 .left h1 {
+        font-size: 50px;
+        color: #fff;
+        letter-spacing: 3px;
+    }
+    .page6 .left p {
+        font-size: 16px;
+    }
+    .page6 .form {
+        height: 56vh;
+        width: 100%;
+    }
+    .page6 .form label {
+        font-size: 14px;
+    }
+
+    .page6 .form input {
+        height: 50px;
+        width: 385px;
+    }
+    .page6 .form textarea{
+        height: 60px;
+        width: 385px;
+    }
+    .page6 .form button {
+        height: 60px;
+        width: 300px;
+        margin-bottom: 65px;
+        
+    }
+    .footer .left h3 {
+        font-size: 34px;
+        text-align: center;
+    }
+    .footer .left p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .footer .right a {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    /* project page  */
+    .nav{
+        display: none;
+    }
+    .prj-card{
+        height: 290px;
+        width: 380px;
+        margin: 12px 0px;
+        background-color: #181823;
+        transition: .3s;
+    }
+}
